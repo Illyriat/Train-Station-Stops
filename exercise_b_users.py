@@ -75,12 +75,20 @@ for animal in avrils_pets:
     if animal['name'] == "monty":
         print(animal['species'])
 
+# print(users["Avril"]["pets"][0]["species"])
+
 
 # 5. Get the smallest of Erik's lottery numbers
 eriks_numbers = users['Erik']['lottery_numbers']
 
 eriks_numbers.sort()
 print(eriks_numbers[0])
+
+# print(min(users["Erik"]["lottery_numbers"])[0])
+
+# sorted(users['Erik]["lottery_numbers"][0])
+
+# users["Erik"]["lottery_numbers"].sort()[0]
 
 
 # 6. Return an list of Avril's lottery numbers that are even
@@ -97,12 +105,16 @@ eriks_numbers = users['Erik']['lottery_numbers']
 eriks_numbers.append(7)
 print(eriks_numbers)
 
+# users["Erik"]["lottery_numbers"].append(7)
+
 
 # 8. Change Erik's hometown to Edinburgh
 eriks_hometown = users['Erik']['home_town']
 
 eriks_hometown = "Edinburgh"
 print(eriks_hometown)
+
+# users["Erik"]["home_town"] = "Edinburgh"
 
 
 # 9. Add a pet dog to Erik called "fluffy"
@@ -115,6 +127,8 @@ new_pet = {
 
 eriks_pets.append(new_pet)
 print(eriks_pets)
+
+# users["Erik"]["pets"].append({"name": "fluffy", "species": "dog"})
 
 
 # 10. Add another person to the users dictionary
